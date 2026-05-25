@@ -31,7 +31,7 @@ public class QuickChat {
         System.out.print("Enter password: ");
         String password = input.nextLine();
 
-        if (username.equals("admin") && password.equals("1234")) {
+        if (username.equals("kelo") && password.equals("4564")) {
 
             System.out.println("Login successful!");
             System.out.println("Welcome to QuickChat");
@@ -76,7 +76,7 @@ public class QuickChat {
     // Send messages
     public static void sendMessages() {
 
-        System.out.print("How many messages do you want to send? ");
+        System.out.print("How many messages do you want to send ");
         int numMessages = input.nextInt();
         input.nextLine();
 
@@ -110,11 +110,11 @@ public class QuickChat {
 
                 int extra = message.length() - 250;
 
-                System.out.println("Message exceeds 250 characters by "+ extra+ ", please reduce the size.");
+                System.out.println("Message exceeds 250 characters by "+ extra+ ", please reduce the size");
                 continue;
 
             } else {
-                System.out.println("Message ready to send.");
+                System.out.println("Message is ready to send");
             }
 
             // Number of sent messages
@@ -129,7 +129,7 @@ public class QuickChat {
 
             System.out.println(result);
 
-            if (result.equals("Message successfully sent.")) {
+            if (result.equals("Message is successfully sent")) {
 
                 System.out.println("\n===== MESSAGE DETAILS =====");
                 System.out.println("Message ID: " + messageID);
@@ -153,11 +153,11 @@ public class QuickChat {
 
         if (number.startsWith("+27") && number.length() <= 12) {
 
-            return "Cell phone number successfully captured.";
+            return "Cell phone number successfully captured";
 
         } else {
 
-            return "Cell phone number is incorrect. Please correct the number and try again.";
+            return "Cell phone number is incorrect. Please correct the number and try again";
         }
     }
 
@@ -201,11 +201,11 @@ public class QuickChat {
 
                 storeMessage(message);
 
-                return "Message successfully stored.";
+                return "Message successfully stored";
 
             default:
 
-                return "Invalid option.";
+                return "Invalid option";
         }
     }
 
